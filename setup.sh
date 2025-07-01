@@ -39,6 +39,9 @@ https://openai.com/chatgpt/download/
 # install C++ tings
 brew install gcc cmake pkg-config sdl2 raylib
 
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # install go
 brew install go
 #add go to path
@@ -47,6 +50,12 @@ export PATH="$HOME/go/bin:$PATH"
 
 # install npm
 brew install npm
+
+# install latest python
+brew install python3
+#create python venv with latest version
+python3 -m venv ~/pyenv
+#activate with: source ~/pyenv/bin/activate
 
 # install fastfetch because it's cool
 brew install fastfetch
