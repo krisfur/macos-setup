@@ -10,7 +10,7 @@ Copy commands from `setup.sh` and run them manually as needed.
 
 - System tweaks (dock, finder)
 - Homebrew package manager
-- Development tools (Git, Go, Node.js, GitHub CLI)
+- Development tools (C++, Git, Go, Node.js, GitHub CLI)
 - Terminal tools (Kitty, tmux, Neovim)
 - Code editors (VS Code, Cursor)
 - Useful CLI tools
