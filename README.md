@@ -2,6 +2,8 @@
 
 Commands and notes for setting up a new macOS development environment.
 
+![screenshot](screenshot.png)
+
 ## Usage
 
 Copy commands from `setup.sh` and run them manually as needed.
