@@ -17,7 +17,7 @@ curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 #then follow the instructions to add to path or do:
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # get github cli
@@ -45,7 +45,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # install go
 brew install go
 #add go to path
-vim ~/.zshenv   
+vim ~/.zshenv
 export PATH="$HOME/go/bin:$PATH"
 
 # install npm
@@ -56,6 +56,9 @@ brew install python3
 #create python venv with latest version
 python3 -m venv ~/pyenv
 #activate with: source ~/pyenv/bin/activate
+
+# install docker
+brew install docker
 
 # install fastfetch because it's cool
 brew install fastfetch
@@ -76,3 +79,4 @@ brew install bat exa fd ripgrep fzf tree htop jq
 # fonts
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code font-jetbrains-mono
+
