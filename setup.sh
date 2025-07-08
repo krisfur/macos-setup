@@ -58,7 +58,9 @@ python3 -m venv ~/pyenv
 #activate with: source ~/pyenv/bin/activate
 
 # install docker
-brew install docker
+brew install docker colima qemu lima lima-additional-guestagents
+#colima start --arch x86_64 --vm-type qemu --memory 4 --cpu 2 --verbose
+#docker run --rm -it ubuntu:24.04 bash
 
 # install fastfetch because it's cool
 brew install fastfetch
