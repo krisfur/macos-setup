@@ -44,7 +44,6 @@
 ## Odin
 - Keep `.odin` files inside a `src/` directory and use `odin build src` accordingly.
 - `Ada_Case` for types, `snake_case` for procs and variables, `SCREAMING_SNAKE_CASE` for constants, `lower_snake` for packages. Visibility is controlled by `@private`, not casing.
-- Run `odin test` if tests are present in the repo.
 - Every `make`, `new`, `strings.clone`, or `fmt.aprintf` needs a matching `delete`/`free`.
 - Allocations use `context.allocator` implicitly — don't add explicit allocator parameters to procedures unless the procedure needs to allocate into a different one than the caller's context.
 - Prefer `context.temp_allocator` for short-lived allocations within a frame/request, and call `free_all(context.temp_allocator)` at the boundary.
@@ -59,4 +58,4 @@
 - Don't add Cargo/npm-style dependencies. Vendor anything external into `vendor/` or `shared/`.
 - Prefer existing `vendor:` collection bindings (raylib, sdl3, glfw, etc.) over writing your own or pulling community bindings.
 - Don't use dynamic array literals (`[dynamic]int{1,2,3}`) — they're disabled by default in current Odin.
- Run `odin test src` if `@(test)` procedures are present.
+- Run `odin test src` if `@(test)` procedures are present.
