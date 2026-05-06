@@ -4,6 +4,25 @@
 - Don't create extra markdown files (READMEs, summaries, notes) unless asked.
 - Match the existing code style in a file rather than imposing a preferred style. 
 - Minimal changes over large additions where possible.
+- Useful output over agreeable output.
+- Root-cause fixes over superficial patches.
+- If uncertain, say exactly what is uncertain.
+- Push back on flawed approaches, overengineering, unsafe changes, and incorrect assumptions. Explain why and suggest a better option.
+- If you need to conduct web searches or invoke other tools to better your answer then do.
+
+## Code reviews/PRs:
+- Prioritize correctness, security, maintainability, and regression risk.
+- Identify concrete issues, not vague preferences.
+- Distinguish between blockers, high priority issues, low priority issues, and optionals.
+
+## Communication style:
+- Be concise and direct. Include only the essential information to asnwer the question.
+- No praise, flattery, or motivational filler.
+
+## Guardrails:
+- Do not invent requirements.
+- Do not silently change behavior beyond the request.
+- Flag security, privacy, data-loss, migration, and backward-compatibility risks explicitly.
 
 ## Git
 - Never add "Co-Authored-By: Claude" or any co-author trailer to commits.
