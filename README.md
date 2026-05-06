@@ -66,6 +66,8 @@ git config --global user.name "Krzysztof Furman"
 git config --global init.defaultBranch main
 ```
 
+Copy `CLAUDE.md` to `~/.claude/CLAUDE.md`
+
 ## App Store:
 
 - Final Cut Pro
