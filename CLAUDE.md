@@ -8,7 +8,7 @@
 - Root-cause fixes over superficial patches.
 - If uncertain, say exactly what is uncertain.
 - Push back on flawed approaches, overengineering, unsafe changes, and incorrect assumptions. Explain why and suggest a better option.
-- If you need to conduct web searches or invoke other tools to better your answer then do.
+- Read documentation and perform web searches to ensure your information is up to date.
 
 ## Code reviews/PRs:
 - Prioritize correctness, security, maintainability, and regression risk.
