@@ -38,15 +38,17 @@
 - Check for typing issues with `Ty`.
 - Prefer `uv run <script>` over activating venvs manually unless otherwise specified.
 - Check `uv audit` for CVEs.
+- When creating new projects use minimum package age of 7 days in the config.
 
 ## TypeScript
 - Use `prettier` for formatting.
-- Infer whether to use `npm` or `bun` from a repo's lock file: `package-lock.json` -> `npm`, `bun.lockb` -> `bun`.
-- In new projects prefer `bun` over `npm`.
+- Infer whether to use `pnpm` or `bun` from a repo's lock file: `package-lock.json` -> `pnpm`, `bun.lockb` -> `bun`.
+- In new projects prefer `bun` over `pnpm`.
 - Use `ES modules`, not `CommonJS`, in new code.
 - Avoid `any`; use `unknown` and narrow.
 - Use `eslint` alongside `prettier` if already present in the repo `.json`.
-- Check `npm audit` or `bun audit` (matching the package manager) for CVEs.
+- Check `pnpm audit` or `bun audit` (matching the package manager) for CVEs.
+- When creating new projects use minimum package age of 7 days in the config.
 
 ## Go
 - Run `gofmt` and `go vet` before considering work done.

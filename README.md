@@ -30,7 +30,7 @@ Get `homebrew`:
 Install everything from homebrew:
 
 ```bash
-brew install anomalyco/tap/opencode claude-code cmake codex discord fastfetch gh ghostty go helium-browser krisfur/tap/fex localsend neovim neovim ninja node obs odin steam t3-code tree-sitter-cli typst uv vlc whatsapp zed zig
+brew install anomalyco/tap/opencode claude-code cmake codex discord fastfetch gh ghostty go helium-browser krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm steam t3-code tree-sitter-cli typst uv vlc whatsapp zed zig
 ```
 
 Install bun:
