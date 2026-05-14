@@ -30,7 +30,7 @@ Get `homebrew`:
 Install everything from homebrew:
 
 ```bash
-brew installclaude-code cmake discord fastfetch gh ghostty go helium-browser krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm ripgrep steam t3-code tree-sitter-cli typst uv vlc whatsapp zed zig
+brew install claude-code cmake discord fastfetch gh ghostty go helium-browser krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm ripgrep steam tree-sitter-cli typst uv vlc vscodium whatsapp zig
 ```
 
 Install bun:
@@ -46,7 +46,7 @@ git clone https://github.com/krisfur/neovim-config.git
 mkdir ~/.config/nvim
 cd neovim-config
 cp init.lua ~/.convig/nvim
-cd zed
+cd vscodium
 bash install.sh
 cd ../..
 ```
@@ -84,9 +84,9 @@ Copy `CLAUDE.md` to `~/.claude/CLAUDE.md`
 - Add desktops 2, 3
 
 - Enable desktop shortcuts:
-    - System Settings → Keyboard → Keyboard Shortcuts… → Mission Control
+  - System Settings → Keyboard → Keyboard Shortcuts… → Mission Control
 
-    - System Settings -> Desktop and Dock -> Mission Control -> Turn Off Automatically rearrange spaces
+  - System Settings -> Desktop and Dock -> Mission Control -> Turn Off Automatically rearrange spaces
 
 - Keyboard -> Turn off Adjust keyboard brightness in low light
 
