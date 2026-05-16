@@ -30,16 +30,10 @@ Get `homebrew`:
 Install everything from homebrew:
 
 ```bash
-brew install claude-code cmake discord fastfetch gh ghostty go helium-browser jq krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm ripgrep steam tree-sitter-cli typst uv vlc vscodium whatsapp zig
+brew install claude-code cmake discord fastfetch gh ghostty go helium-browser jq krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm ripgrep tree-sitter-cli typst uv vlc vscodium whatsapp zig
 ```
 
-Install bun:
-
-```bash
-curl -fsSL https://bun.sh/install | bash
-```
-
-Get neovim and zed configs:
+Get neovim and vscodium configs:
 
 ```bash
 git clone https://github.com/krisfur/neovim-config.git
