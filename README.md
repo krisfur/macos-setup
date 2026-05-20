@@ -30,7 +30,7 @@ Get `homebrew`:
 Install everything from homebrew:
 
 ```bash
-brew install claude-code cmake discord fastfetch gh ghostty go helium-browser jq krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm ripgrep tree-sitter-cli typst uv vlc visual-studio-code whatsapp zig
+brew install claude-code cmake discord fastfetch gh ghostty go helium-browser jq krisfur/tap/fex localsend neovim neovim ninja node obs odin pnpm ripgrep tree-sitter-cli typst uv vlc visual-studio-code whatsapp zig zls
 ```
 
 Get neovim and vscodium configs:
