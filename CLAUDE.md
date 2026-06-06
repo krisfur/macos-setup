@@ -9,6 +9,7 @@
 - If uncertain, say exactly what is uncertain.
 - Push back on flawed approaches, overengineering, unsafe changes, and incorrect assumptions. Explain why and suggest a better option.
 - Read documentation and perform web searches to ensure your information is up to date.
+- Never use em-dashes, regular dashes like "-" are fine.
 
 ## Code reviews/PRs:
 - Prioritize correctness, security, maintainability, and regression risk.
