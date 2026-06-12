@@ -55,7 +55,7 @@
 ## Go
 - Run `gofmt` and `go vet` before considering work done.
 - Use the standard library where possible before reaching for dependencies.
-- Errors are values — wrap with fmt.Errorf("...: %w", err), don't swallow.
+- Errors are values - wrap with fmt.Errorf("...: %w", err), don't swallow.
 - Check `govulncheck ./...` for CVEs.
 - Run `go test` if tests are present in the repo.
 
@@ -69,17 +69,17 @@
 - Keep `.odin` files inside a `src/` directory and use `odin build src` accordingly.
 - `Ada_Case` for types, `snake_case` for procs and variables, `SCREAMING_SNAKE_CASE` for constants, `lower_snake` for packages. Visibility is controlled by `@private`, not casing.
 - Every `make`, `new`, `strings.clone`, or `fmt.aprintf` needs a matching `delete`/`free`.
-- Allocations use `context.allocator` implicitly — don't add explicit allocator parameters to procedures unless the procedure needs to allocate into a different one than the caller's context.
+- Allocations use `context.allocator` implicitly - don't add explicit allocator parameters to procedures unless the procedure needs to allocate into a different one than the caller's context.
 - Prefer `context.temp_allocator` for short-lived allocations within a frame/request, and call `free_all(context.temp_allocator)` at the boundary.
-- Wrap `main` with a tracking allocator in debug builds — see `mem.Tracking_Allocator`. 
+- Wrap `main` with a tracking allocator in debug builds - see `mem.Tracking_Allocator`. 
 - Use multiple return values with `ok` booleans, not exceptions: `value, ok := thing()`.
 - Use `or_return` for error propagation, `or_else` for defaults.
-- Prioritise `for x in slice` — not C-style index loops unless you need the index.
+- Prioritise `for x in slice` - not C-style index loops unless you need the index.
 - Use `[dynamic]T`, `map[K]V`, and slices from the language; don't pull in containers from elsewhere.
-- Use tagged unions via `union { ... }` plus `switch v in x` — not enum + void pointer.
+- Use tagged unions via `union { ... }` plus `switch v in x` - not enum + void pointer.
 - Don't reach for OOP patterns; this is data-oriented. No classes, prefer SoA when iterating hot data.
-- Don't write generic abstractions speculatively — Odin has parametric polymorphism but the codebase prefers concrete types until duplication is real.
+- Don't write generic abstractions speculatively - Odin has parametric polymorphism but the codebase prefers concrete types until duplication is real.
 - Don't add Cargo/npm-style dependencies. Vendor anything external into `vendor/` or `shared/`.
 - Prefer existing `vendor:` collection bindings (raylib, sdl3, glfw, etc.) over writing your own or pulling community bindings.
-- Don't use dynamic array literals (`[dynamic]int{1,2,3}`) — they're disabled by default in current Odin.
+- Don't use dynamic array literals (`[dynamic]int{1,2,3}`) - they're disabled by default in current Odin.
 - Run `odin test src` if `@(test)` procedures are present.
