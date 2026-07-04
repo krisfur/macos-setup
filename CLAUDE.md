@@ -32,6 +32,11 @@
 - Write commit messages as if I authored them always ending with a full stop ".".
 - Never push straight to the main branch.
 
+## Markdown & Typst (.md, .typ)
+- Never hard-wrap or reflow prose. Write each paragraph, list item, table row, and heading as a single physical line; let the renderer soft-wrap.
+- Insert newlines only where they are semantically meaningful: between paragraphs, between list items, around headings, and for code/math blocks.
+- This applies when editing existing files too - do not "tidy" a long line by splitting it, and preserve the file's existing wrapping convention if it already wraps.
+
 ## Python
 - Use type hints on function signatures.
 - Use `pytest` for tests where applicable.
