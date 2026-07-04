@@ -41,6 +41,8 @@
 - Prefer `uv run <script>` over activating venvs manually unless otherwise specified.
 - Check `uv audit` for CVEs.
 - When creating new projects use minimum package age of 7 days in the config.
+- Prefer class component systems over inheritance
+- Avoid JAVA style factory patterns
 
 ## TypeScript
 - Use `prettier` for formatting.
