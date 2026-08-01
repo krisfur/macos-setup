@@ -10,7 +10,7 @@
 - Push back on flawed approaches, overengineering, unsafe changes, and incorrect assumptions. Explain why and suggest a better option.
 - Read documentation and perform web searches to ensure your information is up to date.
 - Never use em dashes "—", use hyphens "-" instead.
-- Be extremely brief in code comments, giving only absolutely crucial information.
+- Be extremely brief in code comments, giving only absolutely crucial information. Preferably maximum of 2 lines per comment.
 
 ## Code reviews/PRs:
 - Prioritize correctness, security, maintainability, and regression risk.
@@ -72,6 +72,29 @@
 - Prefer `?` over `unwrap()` outside of tests and prototypes.
 - Check `cargo audit` for CVEs.
 - Run `cargo test` if tests are present in the repo.
+- Code must never panic outside of tests: no `unwrap()`, `expect()`, `panic!`, `todo!`, `unimplemented!`, `unreachable!`, raw indexing/slicing, or `process::exit`. Return `Result`/`Option` and handle every case.
+- Use checked/saturating/wrapping arithmetic and `TryFrom`/`try_into` rather than `as` casts.
+- Every `Cargo.toml` must include this lint config:
+
+```toml
+[lints.clippy]
+pedantic = { level = "deny", priority = -1 }
+nursery = { level = "deny", priority = -1 }
+# DENY PANICS:
+unwrap_used = "deny"
+expect_used = "deny"
+indexing_slicing = "deny"
+arithmetic_side_effects = "deny"
+unreachable = "deny"
+unimplemented = "deny"
+unchecked_time_subtraction = "deny"
+todo = "deny"
+string_slice = "deny"
+panic_in_result_fn = "deny"
+panic = "deny"
+exit = "deny"
+as_conversions = "deny"
+```
 
 ## Odin
 - Keep `.odin` files inside a `src/` directory and use `odin build src` accordingly.
