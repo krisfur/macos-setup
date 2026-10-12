@@ -52,6 +52,12 @@ fastfetch --gen-config
 cp fastfetch/* ~/.config/fastfetch
 ```
 
+Stop slow shell startups from completion cache rebuilds. Shells with different `fpath` (e.g. Ghostty adds `_ghostty`) share `~/.zcompdump` and keep forcing `compinit` to rebuild it, which takes ~5s on a managed Mac with Microsoft Defender scanning every file read. Add this to the top of `~/.zshrc` to keep a separate cache per `fpath`:
+
+```bash
+autoload -Uz compinit && compinit -d "$HOME/.zcompdump-$(md5 -qs "$fpath")"
+```
+
 Set up git config:
 
 ```bash
