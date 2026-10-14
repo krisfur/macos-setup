@@ -58,6 +58,12 @@ Stop slow shell startups from completion cache rebuilds. Shells with different `
 autoload -Uz compinit && compinit -d "$HOME/.zcompdump-$(md5 -qs "$fpath")"
 ```
 
+Stop the first `git` tab completion in each shell taking ~2s. Homebrew's `_git` runs `pkg-config` to find `git-completion.bash`, which scans ~450 `.pc` files that Defender rarely has cached. Point it at the script directly in `~/.zshrc`:
+
+```bash
+zstyle ':completion:*:*:git:*' script /opt/homebrew/share/zsh/site-functions/git-completion.bash
+```
+
 Set up git config:
 
 ```bash
